@@ -1,0 +1,101 @@
+html, body {
+    text-align: center;
+    color: white;
+    background: #121212;
+    font-family: "Arial";
+}
+
+.game-info {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.game-info > div {
+    width: 300px;
+    margin: 10px;
+}
+
+.grid-container {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 75px 75px 75px 75px 75px;
+    gap: 20px;
+}
+
+.grid-container > div {
+    background: #616E7C;
+    border-radius: 5px;
+    font-size: 150%;
+    line-height: 75px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.team {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: red;
+}
+
+#timer {
+    font-size: 30px;
+}
+
+#spymaster-button {
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 10px;
+    line-height: 20px;
+    width: 10%;
+    margin: auto;
+    height: 45px;
+}
+
+.n.spymaster {
+    background: yellow;
+}
+
+.r.spymaster {
+    background: red !important;
+}
+
+.b.spymaster {
+    background: blue !important;
+}
+
+.a.spymaster {
+    background: black !important;
+}
+
+.r.shown {
+    background: red !important;
+}
+
+.b.shown {
+    background: blue !important;
+}
+
+.a.shown {
+    background: black !important;
+}
+
+.n.shown {
+    background: yellow;
+}
+
+.red-cards {
+    color: red;
+    border: 2px solid red;
+    border-radius: 20px;
+}
+
+.blue-cards {
+    color: blue;
+    border: 2px solid blue;
+    border-radius: 20px;
+}

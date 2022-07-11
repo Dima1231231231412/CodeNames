@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background: #121212;
+    font-family: 'Arial'
+}
+
+.login-container {
+    height: 200px;
+    border: 2px solid white;
+    width: 450px;
+    overflow: hidden;
+    margin: 150px auto;
+    padding: 80px;
+    background: #141d93;
+    border-radius: 30px;
+}
+
+#submit-button {
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 20px;
+    width: 100px;
+    height: 30px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+}
+
+#username {
+    width: 170px;
+    height: 30px;
+    font-size: 20px;
+}
+
+div {
+    cursor:auto;
+    font-size: 25px;
+    display: block;
+    border-radius: 10px;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.game-info1 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.game-info1 > div {
+    width: 500px !important;
+    margin: 50px !important;
+    font-size: 200%;
+}

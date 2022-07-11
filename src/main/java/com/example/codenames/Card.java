@@ -3,11 +3,11 @@ package com.example.codenames;
 import java.util.List;
 
 public class Card {
-    public String word;
-    public String color;
+    public List<String> word;
+    public List<String> color;
 
     public Card(List<String> word, List<String> color){
-        this.word = String.valueOf(word);
-        this.color = String.valueOf(color);
+        this.word = word;
+        this.color = color;
     }
 }
