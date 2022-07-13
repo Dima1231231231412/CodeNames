@@ -32,7 +32,7 @@ public class Avtorization {
 
     @GetMapping("/cards")
     public void cards(HttpServletResponse response) throws IOException {
-        FileReader reader = new FileReader("D:\\Java Projects\\CodeNames\\src\\main\\java\\com\\example\\codenames\\dict.txt");
+        FileReader reader = new FileReader("D:\\codenam\\CodeNames\\src\\main\\java\\com\\example\\codenames\\dict.txt");
         int c;
         StringBuilder str = new StringBuilder();
 
@@ -66,7 +66,7 @@ public class Avtorization {
         Card card = new Card(selectionWords,colors);
         String json = new Gson().toJson(card);
         response.setContentType("application/json");
-        response.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("CP1251");
 
         response.addHeader("Access-Control-Allow-Origin", "*");
         response.getWriter().write(json);

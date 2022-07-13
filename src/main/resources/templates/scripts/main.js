@@ -81,20 +81,20 @@ function cardClick(evt) {
 
 function showSpymaster() {
     if (activeSpymaster == 0) {
-        spymaster.innerHTML = "Показать игровую доску";
+        spymaster.innerHTML = "<h3> Показать игровую доску </h3>";
         activeSpymaster = 1;
         for (let i = 0; i < cardsNum; i++)
             cards[i].classList.toggle("spymaster");
         return;
     }
-    spymaster.innerHTML = "Доска спаймастера";
+    spymaster.innerHTML = "<h3> Показать доску спаймастера </h3>";
     activeSpymaster = 0;
     for (let i = 0; i < cardsNum; i++)
         cards[i].classList.toggle("spymaster");
 }
 
 function newGame() {
-    
+    location.reload();
 }
 
 function startTimer() {
@@ -149,5 +149,7 @@ const teamTurn = document.getElementById("team-turn");
 const redScore = document.getElementById("red-score");
 const blueScore = document.getElementById("blue-score");
 const display = document.getElementById('timer');
+const NewGame = document.getElementById("newgame-button");
+NewGame.addEventListener('click', newGame);
 spymaster.addEventListener('click', showSpymaster);
 init();
