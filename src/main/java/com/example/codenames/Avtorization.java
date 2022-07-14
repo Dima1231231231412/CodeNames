@@ -40,7 +40,7 @@ public class Avtorization {
             str.append((char) c);
         }
 
-        String[] words = str.toString().strip().split(", ");
+        String[] words = str.toString().split(", ");
 
         int max = words.length;
         List<String> selectionWords = new ArrayList<>();

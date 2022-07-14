@@ -7,6 +7,7 @@ async function init() {
         cards[i].innerHTML = wordBoard[i];
         cards[i].classList.add(colorBoard[i]);
     }
+    tipsChange();
     startTimer();
 }
 
@@ -134,6 +135,11 @@ function flipTurn() {
     team.style.background = "red";
 }
 
+function tipsChange() {
+    tips.innerHTML = "<h1> Спаймастер красных, посмотрите на свою доску и сделайте выбор </h1>";
+
+}
+
 let colorBoard = [];
 let wordBoard = [];
 let activeSpymaster = 0;
@@ -150,6 +156,7 @@ const redScore = document.getElementById("red-score");
 const blueScore = document.getElementById("blue-score");
 const display = document.getElementById('timer');
 const NewGame = document.getElementById("newgame-button");
+const tips = document.getElementById("tipstext");
 NewGame.addEventListener('click', newGame);
 spymaster.addEventListener('click', showSpymaster);
 init();
