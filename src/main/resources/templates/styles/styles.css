@@ -46,18 +46,34 @@ h1 {
     font-size: 30px;
 }
 
-#spymaster-button {
+.spynewgame-info {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+}
+
+.spynewgame-info > div {
+    width: 300px;
+    margin: 10px;
+}
+
+.spymasterbtn{
     cursor: pointer;
-    border: 1px solid white;
-    border-radius: 10px;
-    line-height: 20px;
-    width: 10%;
-    margin: auto;
-    height: 45px;
+    color: rgb(255, 255, 255);
+    border: 2px solid red;
+    border-radius: 20px;
+
+}
+
+.newgamebtn{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    border: 2px solid red;
+    border-radius: 20px;
 }
 
 .n.spymaster {
-    background: yellow;
+    background: rgb(187, 187, 26) !important;
 }
 
 .r.spymaster {
@@ -85,7 +101,7 @@ h1 {
 }
 
 .n.shown {
-    background: yellow;
+    background: rgb(187, 187, 26) !important;
 }
 
 .red-cards {
