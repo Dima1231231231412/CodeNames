@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align:center;
     font-size: 25px;
     color: white;
     background: #121212;
@@ -31,10 +31,16 @@ html, body {
     color: black;
 }
 
-#username {
-    width: 170px;
-    height: 30px;
-    font-size: 20px;
+#username1 {
+    align-self: center;
+
+
+
+}
+
+#username2 {
+    align-self: left;
+
 }
 
 div {

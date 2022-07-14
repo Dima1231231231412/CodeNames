@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title>Login form</title>
-        <link rel="stylesheet" href="styles/login.css">
-    </head>
-    <body>
-        <div class="game-info1">
-            <div id="login-link"><a href="login.html">CODENAMES <body link="#ffcc00" vlink="#cecece" alink="#ff0000"></a></div>
-            <div><a href="https://codenames.me/rules.pdf" target="_blank">Правила игры <body link="#ffcc00" vlink="#cecece" alink="#ff0000" ></a></div>
-        </div>
-        <div class="login-container">
-            <h1>Авторизация</h1>
-            <form id="login" action="index.html">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" maxlength="15" required>
-                <br>
-                <input id="submit-button" type="submit" value="Войти">
-            </form>
-        </div>
-    </body>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Login form</title>
+    <link rel="stylesheet" href="styles/login.css">
+    <script defer src="scripts/main.js"></script>
+</head>
+<body>
+<div class="game-info1">
+    <div id="login-link"><a href="login.html">CODENAMES <body link="#ffcc00" vlink="#cecece" alink="#ff0000"></a></div>
+    <div><a href="https://codenames.me/rules.pdf" target="_blank">Правила игры <body link="#ffcc00" vlink="#cecece" alink="#ff0000" ></a></div>
+</div>
+<div class="login-container">
+    <h1 id="titlename"> Названия команд</h1>
+    <form id="login" action="index.html">
+        <label id="redteamlabel" for="username1">Красная команда:</label>
+        <input type="text" id="username1" name="redTeamName" maxlength="15" required>
+        <label id="blueteamlabel" for="username2">Синяя команда:</label>
+        <input type="text" id="username2" name="blueTeamName" maxlength="15" required>
+        <input id="submit-button" type="submit" value="Войти">
+    </form>
+</div>
+</body>
 </html>
-

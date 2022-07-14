@@ -22,13 +22,26 @@ public class Avtorization {
 
     @GetMapping("/player")
     @CachePut(value="addresses")
-    public void doGet(HttpServletRequest request,HttpServletResponse response) throws IOException {
+    public void doGetPlayer(HttpServletRequest request,HttpServletResponse response) throws IOException {
         Player player = new Player(request.getParameter("id"),request.getParameter("name"),"игрок");
         String json = new Gson().toJson(player);
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
         response.getWriter().write(json);
     }
+
+    @GetMapping("/teams")
+    @CachePut(value="addresses")
+    public void doGetTeam(HttpServletRequest request,HttpServletResponse response) throws IOException {
+        Teams teams = new Teams(request.getParameter("username1"),"ТЕАМ2");
+        String json = new Gson().toJson(teams);
+        response.setContentType("application/json");
+        response.setCharacterEncoding("UTF-8");
+        response.addHeader("Access-Control-Allow-Origin", "*");
+        response.getWriter().write(json);
+        System.out.println();
+    }
+
 
     @GetMapping("/cards")
     public void cards(HttpServletResponse response) throws IOException {
